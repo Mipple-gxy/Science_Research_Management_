@@ -7,7 +7,7 @@ import requests
 from bs4 import BeautifulSoup
 import os
 
-path = ".\\downloadArticles\\"
+path = ".\\downloadArticles\\"#文献下载地址，可自行修改
 if os.path.exists(path) == False:
     os.mkdir(path)  #创建保存下载文章的文件夹，与py文件在同一个文件夹下
 f = open("doi.txt", "r", encoding="utf-8")  #存放DOI码的.txt文件中，每行存放一个文献的DOI码，完毕须换行（最后一个也须换行）
